@@ -1,0 +1,36 @@
+# requirements.txt — Voice-Controlled Fruit Sorting
+
+# --- Core math/vision ---
+numpy>=1.23
+# Use one of the two OpenCV wheels depending on environment:
+opencv-python>=4.8.0; platform_machine != "aarch64"
+opencv-python-headless>=4.8.0; platform_machine == "aarch64"
+
+# --- Audio / speech ---
+pyaudio>=0.2.14          # needs system PortAudio
+vosk>=0.3.45
+pyttsx3>=2.90
+
+# --- GStreamer Python bindings ---
+PyGObject>=3.44.0        # needs system GStreamer + GI dev packages
+
+# --- Hailo SDK (Python modules come from the SDK; usually NOT pip-installed) ---
+# hailo               # provided by HailoRT/SDK
+# hailo_apps          # provided by Hailo TAPPAS/Apps
+# If your SDK exposes pip packages, uncomment and pin them appropriately.
+
+# --- Robot control (local/custom) ---
+# dobot_lib           # local module or vendor package; install from your source
+
+
+
+
+
+# Common packages
+pip install numpy "pyttsx3>=2.90" "vosk>=0.3.45" "pyaudio>=0.2.14" "PyGObject>=3.44.0"
+
+# OpenCV (choose ONE, depending on your environment)
+# x86_64 desktop with display:
+pip install "opencv-python>=4.8.0"
+# Headless servers or many ARM/aarch64 setups (no GUI):
+pip install "opencv-python-headless>=4.8.0"
