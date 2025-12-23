@@ -1,3 +1,13 @@
+'''
+To run the file use the command below
+Check the input device and the location of the files.
+
+python working_conver.py 
+--hef-path resources/fruit_dobot_v1.hef 
+--input /dev/video0 --labels-json resources/fruit_dobot_v1.json
+'''
+
+
 # main_out.py
 import os
 import time
