@@ -1,0 +1,20 @@
+
+{
+    "detection_threshold": 0.5,
+    "max_boxes":200,
+    "labels": [
+      "all",
+      "black grape",
+      "carrot",
+      "corn",
+      "eggplant",
+      "green apple",
+      "olive",
+      "pomegranate",
+      "pumpkin",
+      "red apple",
+      "red grape",
+      "strawberry",
+      "white radish"
+    ]
+}
