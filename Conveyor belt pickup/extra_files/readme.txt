@@ -1,0 +1,1 @@
+This is the gsrtream files that is present in hailo environment. This is here to take refrences of the changes need to make in the "venv_hailo_rpi_examples/lib/python3.11/site-packages/hailo_apps/hailo_app_python/core/gstreamer" files
